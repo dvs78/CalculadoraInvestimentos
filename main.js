@@ -11,6 +11,14 @@ const calculateButton = document.getElementById("calculate-results");
 let doughnutChartReference = {};
 let progressionChartReference = {};
 
+const columnsArray = [
+  { columnLabel: "Total investido", accessor: "investedAmount" },
+  { columnLabel: "Rendimento mensal", accessor: "interestReturns" },
+  { columnLabel: "Rendimento total", accessor: "totalInterestReturns" },
+  { columnLabel: "Mês", accessor: "month" },
+  { columnLabel: "Quantia total", accessor: "totalAmount" },
+];
+
 function formatCurrency(value) {
   return value.toFixed(2);
 }
