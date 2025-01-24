@@ -1,0 +1,19 @@
+Contrato
+
+1 - Sistema deve usar o Tailwindcss ou não
+2 - Sistema deve ter um
+elemento html do tipo table (com id definifo) preparado e sem informações dentro
+3 - São necessários 2 arrays para geração de tabela...
+  3.1 - Um array de dados
+  3.2 - Um array com objetos que caracterizam as colunas
+  3.3 - Não é necessário,
+mas pode-se passar uma função de formatação dos dados das colunas
+
+type
+columnObject = {
+  columnLabel: string;
+  accessor: string;
+  formatFN?: (info: number
+| string) => string; // formatação opcional }
+
+type columnsArray = columnObject[]
